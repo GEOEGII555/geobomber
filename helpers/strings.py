@@ -1,0 +1,5 @@
+FRONTEND_FALLING_BACK = "Frontend %s has failed to initialize, falling back to %s..."
+YESNO_PROMPT = "Input y for yes, and n for no: "
+ENTER_CONTINUE = "Press Enter to continue..."
+MAKE_TERMINAL_BIGGER = "Please resize your terminal to be bigger."
+INVALID_CHOICE = "Invalid choice!"

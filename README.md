@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/GEOEGII555/geobomber/dev/logo.png" />
 </p>
-For Russian people: [Русский](README.ru.md)
+For Russian people: [Русский](https://github.com/GEOEGII555/geobomber/blob/dev/README.ru.md)
 
 # What is this?
 This is an SMS bomber to prank your friends, parents, teachers, and other people.

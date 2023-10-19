@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/GEOEGII555/geobomber/dev/logo.png" />
 </p>
-Английский язык: [English](README.md)
+Английский язык: [English](https://github.com/GEOEGII555/geobomber/blob/dev/README.md)
 
 # Что это?
 Эта программа является SMS бомбером, с помощью неё ты можешь пранкануть (подшутить) над другом, родителями, учителями и над другими людьми.

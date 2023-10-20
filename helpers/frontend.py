@@ -1,3 +1,4 @@
+import os
 import time
 from . import strings
 from enum import Enum
@@ -61,7 +62,16 @@ def menu(message: str, items: list) -> tuple:
             print(f"{x[0]}: {x[1]}")
         choice = input("> ")
         while choice not in valid_choices:
+            if choice == "":
+                return ('esc', '')
             print(strings.INVALID_CHOICE)
             choice = input("> ")
-        return choice
+        return ('ok', choice)
     raise NotImplementedError(f"Frontend {currentFrontendType.name} is not supported in menu()")
+
+def progress(filepath: str):
+    if currentFrontendType == FRONTENDTYPE.PYTHONDIALOG:
+        return d.progressbox(file_path=filepath)
+    if currentFrontendType == FRONTENDTYPE.CONSOLE:
+        reutrn os.system(f"tail -f {filepath}")
+    raise NotImplementedError(f"Frontend {currentFrontendType.name} is not supported in progress()")

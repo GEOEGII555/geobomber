@@ -1,0 +1,33 @@
+# Example module for geobomber
+
+# Must exist in all modules:
+geobomber_module = True
+geobomber_module_name = "Example module (does nothing)"
+# Either "any" for all country codes,
+# or a list of country codes:
+# ["7", "1", "380"]
+geobomber_module_countrycodes = "any"
+# Change that name if you're making your own module,
+# otherwize you'll basically say that I own your module.
+geobomber_module_author = "GEOEGII555"
+
+import time
+import requests
+
+retry_at_time: int = 0
+
+def send_sms(country_code: str, number: str) -> bool:
+    retry_at_time = int(time.time()) + 5
+    return True
+
+def retry_at() -> int:
+    return retry_at_time
+
+def can_retry() -> bool:
+    return True
+
+def before_attack_start() -> None:
+    pass
+
+def after_attack_end() -> None:
+    pass
